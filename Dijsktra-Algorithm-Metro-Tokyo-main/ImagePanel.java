@@ -340,7 +340,7 @@ public class ImagePanel extends JFrame {
 			allStations.add(nippori);
 			Station ebisu = new Station("Ebisu", 301-10, 620-10, circleSize, circleSize);
 			allStations.add(ebisu);
-			Station uenoP = new Station("Ueno", 748-10, 157-100, circleSize, circleSize);
+			Station uenoP = new Station("Ueno", 748-10, 157-10, circleSize, circleSize);
 			allStations.add(uenoP);
 			Station akihabara = new Station("Akihabara", 750-10, 254-10, circleSize, circleSize);
 			allStations.add(akihabara);
