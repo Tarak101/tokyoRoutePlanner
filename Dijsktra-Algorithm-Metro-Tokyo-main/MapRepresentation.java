@@ -103,7 +103,7 @@ public class MapRepresentation  {
 		// Red Line Stations 3
 		Node shinjuku = new Node("Shinjuku", 35.690, 139.700, 3);
 		Node nishiShinjuku = new Node("Nishi-Shinjuku", 35.688, 139.694, 30);
-		Node akasakaMitsuke = new Node("Akasaka-mitsuke", 35.675, 139.736, 3);
+		Node akasakaMitsuke = new Node("Akasaka-Mitsuke", 35.675, 139.736, 3);
 		Node kasumigaseki = new Node("Kasumigaseki", 35.678, 139.742, 3);
 		Node otemachi = new Node("Otemachi", 35.687, 139.763, 3);
 		Node ginza = new Node("Ginza", 35.676, 139.763, 21);
@@ -119,7 +119,7 @@ public class MapRepresentation  {
 		Node akabanebashi = new Node("Akabanebashi", 35.653, 139.746, 5);
 		Node daimon = new Node("Daimon", 35.656, 139.756, 5);
 		Node shidome = new Node("Shidome", 35.665, 139.759, 5);
-		Node tsukijishio = new Node("Tsukujishio", 35.667, 139.772, 5);
+		Node tsukijishijo = new Node("Tsukujishijo", 35.667, 139.772, 5);
 		Node tsukishima = new Node("Tsukishima", 35.661, 139.783, 5);
 		Node kiyosumShirakawa = new Node("Kiyosumi-shirakawa", 35.678, 139.800, 5);
 		Node ryogoku = new Node("Ryogoku", 35.696, 139.794, 5);
@@ -248,11 +248,11 @@ public class MapRepresentation  {
 		kiyosumShirakawa.addEdge(new Edge(kiyosumShirakawa, tsukishima, 1.3));
 		tsukishima.addEdge(new Edge(tsukishima, kiyosumShirakawa, 1.3));
 		
-		tsukishima.addEdge(new Edge(tsukishima, tsukijishio, 0.9));
-		tsukijishio.addEdge(new Edge(tsukijishio, tsukishima, 0.9));
+		tsukishima.addEdge(new Edge(tsukishima, tsukijishijo, 0.9));
+		tsukijishijo.addEdge(new Edge(tsukijishijo, tsukishima, 0.9));
 		
-		tsukijishio.addEdge(new Edge(tsukijishio, shidome, 1.1));
-		shidome.addEdge(new Edge(shidome, tsukijishio, 1.1));
+		tsukijishijo.addEdge(new Edge(tsukijishijo, shidome, 1.1));
+		shidome.addEdge(new Edge(shidome, tsukijishijo, 1.1));
 		
 		shidome.addEdge(new Edge(shidome, daimon, 1.2));
 		daimon.addEdge(new Edge(daimon, shidome, 1.2));
@@ -317,7 +317,7 @@ public class MapRepresentation  {
 		graph.addNode(ebisu);
 		graph.addNode(shibuya);
 		graph.addNode(shidome);
-		graph.addNode(tsukijishio);
+		graph.addNode(tsukijishijo);
 		graph.addNode(tsukishima);
 		graph.addNode(kiyosumShirakawa);
 		graph.addNode(ryogoku);
