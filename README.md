@@ -58,5 +58,3 @@ Contributions are welcome! Follow these steps:
 4. Push to the branch (`git push origin feature-name`).  
 5. Create a Pull Request.  
 
----
-Feel free to customize this further with your unique project details!
