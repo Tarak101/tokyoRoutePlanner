@@ -458,7 +458,7 @@ public class ImagePanel extends JFrame {
 
 		ImagePanel ip = new ImagePanel();
 		
-		//ArrayList<String> minimumPath = map.getCaminoMinimo();
+		//ArrayList<String> minimumPath = map.getMinimumPathCondensed();
 		//ip.mainPanel.setMinimumPath(minimumPath);
 		//System.out.println(minimumPath);
 
