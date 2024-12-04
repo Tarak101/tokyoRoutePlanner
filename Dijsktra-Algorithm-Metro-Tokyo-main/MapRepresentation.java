@@ -33,7 +33,7 @@ public class MapRepresentation  {
 			for (int i=0;i<connections.size();i++) {
 				Node currDestination = connections.get(i).getDestination();
 				if(!visited.contains(currDestination)) {
-					currDistance = connections.get(i).getDistance() + distanciaCoord(connections.get(i).getDestination().getLatitude(), 
+					currDistance = connections.get(i).getDistance() + distanceCoord(connections.get(i).getDestination().getLatitude(), 
 							connections.get(i).getDestination().getLongitude(), destination.getLatitude(), destination.getLongitude());
 					if(previousNode != null && !(currDestination.getLines() % 2 == 0 && previousNode.getLines() % 2 ==0 || 
 							currDestination.getLines() % 3 == 0 && previousNode.getLines() % 3 == 0 || 
@@ -76,7 +76,7 @@ public class MapRepresentation  {
 		}
 	}
 
-	public double distanciaCoord(double lat1, double lng1, double lat2, double lng2) {  
+	public double distanceCoord(double lat1, double lng1, double lat2, double lng2) {  
 		if (lat1 == 0 || lng1 == 0 || lat2 == 0 || lng2 == 0) {
 			throw new IllegalArgumentException("Invalid coordinates: cannot be zero");
 		}
