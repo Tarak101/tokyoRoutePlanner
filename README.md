@@ -59,4 +59,4 @@ Contributions are welcome! Follow these steps:
 5. Create a Pull Request.  
 
 ---
-Feel free to customize this further with your unique project details!
+
